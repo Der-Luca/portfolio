@@ -11,6 +11,7 @@ import {
   Navigate,
 } from "react-router-dom";
   import Contact from "../pages/Contact";
+import Hobbies from "../pages/Hobbies";
   import Home from "../pages/Home";
 import Navbar from "./Navbar";
 
@@ -31,6 +32,7 @@ function MyRouter() {
       <Route path="/" element={<Root />}>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/hobbies" element={<Hobbies />} />
        
       </Route>
     )
