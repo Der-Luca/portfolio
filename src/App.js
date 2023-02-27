@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-neutral-100 text-gray-500">
 
     <MyRouter/>
     </div>

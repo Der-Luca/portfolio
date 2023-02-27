@@ -8,22 +8,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex items-center justify-between bg-indigo-500 text-white p-6 md:justify-start">
-        <motion.h1
-          initial={{ x: -100 }}
-          animate={{ x: 0 }}
-          transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-          className="hidden md:block"
-        >
+      
+        
           Luca Plessing
-        </motion.h1>
-        <motion.h1
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
-          transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-          className="block md:hidden text-center"
-        >
-          Luca Plessing
-        </motion.h1>
+     
         <button
           className="bg-white text-indigo-500 p-2 rounded-full"
           onClick={() => setIsPopupOpen(!isPopupOpen)}
@@ -59,8 +47,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" onClick={() => setIsPopupOpen(!isPopupOpen)}  className="block p-2 text-indigo-500 hover:bg-indigo-100">
-                    Contact
+                  <Link to="/hobbies" onClick={() => setIsPopupOpen(!isPopupOpen)}  className="block p-2 text-indigo-500 hover:bg-indigo-100">
+                    Hobbies
                   </Link>
                 </li>
               </ul>
@@ -68,7 +56,7 @@ const Navbar = () => {
                 className="text-white bg-indigo-500 p-2 rounded-full"
                 onClick={() => setIsPopupOpen(!isPopupOpen)}
               >
-                Menü schließen
+               Cloese Menu
               </button>
             </motion.div>
 

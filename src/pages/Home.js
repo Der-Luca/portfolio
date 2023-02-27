@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import luca from "../images/Luca-Samuel_Plessing_square.jpg"
 const Home = () => {
   return (
     <motion.div
@@ -9,11 +9,18 @@ const Home = () => {
       transition={{ duration: 1 }}
     >
       <img
-        src="https://via.placeholder.com/400x200"
+        src={luca}
         alt="Placeholder Image"
-        className="mx-auto mb-4"
+        className="mx-auto mb-4 mt-10 rounded-md h-80 w-80"
       />
-      <h1 className="text-4xl font-bold text-center">Ihr IT-Dienstleister nebenan</h1>
+      <h1 className="text-4xl font-bold text-center">Hello stranger...</h1>
+      <p className="text-xl font-thin text-justify p-5">
+      You may wonder why I designed this page... 
+      Quite simply this is just to show who I am and what I like to do. 
+      It serves me as a kind of portfolio. 
+      Maybe it will also become a block who knows,
+       but currently it is just to introduce me.
+      </p>
     </motion.div>
   );
 };
